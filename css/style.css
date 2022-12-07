@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  background-color: antiquewhite;
+}
+nav .navbar_right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 18px;
+}
+nav .navbar_right li .logo_siri {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+nav .navbar_right li .loupe {
+  width: 17px;
+  height: 17px;
+  transform: scaleX(-1);
+  vertical-align: middle;
+}
+nav .navbar_right li .wifi {
+  width: 20px;
+  height: 15px;
+  vertical-align: middle;
+}
+nav .navbar_right li .batterie {
+  width: 24px;
+  height: 25px;
+  vertical-align: middle;
+}
+nav .navbar_right_portable {
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 15px;
+}
+nav ul li {
+  vertical-align: middle;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  vertical-align: middle;
+}
+nav ul li a .logo_apple {
+  width: 15px;
+  height: 18px;
+}
+nav .navbar_left_portable {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    background-color: antiquewhite;
+  }
+  nav .navbar_left {
+    display: none;
+  }
+  nav .navbar_right {
+    display: none;
+  }
+  nav .navbar_right_portable {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18px;
+  }
+  nav .navbar_right_portable li .wifi {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+  }
+  nav .navbar_right_portable li .batterie {
+    width: 24px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  nav .navbar_left_portable {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-left: 15px;
+  }
+  nav .navbar_left_portable li .operateur {
+    vertical-align: middle;
+  }
+}/*# sourceMappingURL=style.css.map */

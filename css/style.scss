@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+}
+
+// Barre de navigation
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    background-color: antiquewhite;
+    .navbar_right{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 18px;
+        li{
+            .logo_siri{
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            .loupe{
+                width: 17px;
+                height: 17px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                vertical-align: middle;
+            }
+            .wifi{
+                width: 20px;
+                height: 15px;
+                vertical-align: middle;
+            }
+            .batterie{
+                width: 24px;
+                height: 25px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .navbar_right_portable{
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 15px;
+        li{
+            vertical-align: middle;
+            a{
+                text-decoration: none;
+                color: black;
+                vertical-align: middle;
+                .logo_apple{
+                    width: 15px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .navbar_left_portable{
+        display: none;
+    }
+}
+
+// Responsive
+
+// Tablette
+@media screen and (max-width: 992px){
+    // 
+}
+
+// Portable
+@media screen and (max-width: 600px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 2px;
+        background-color: antiquewhite;
+        .navbar_left{
+            display: none;
+        }
+        .navbar_right{
+            display: none;
+        }
+        .navbar_right_portable{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 18px;
+            li{
+                .wifi{
+                    width: 20px;
+                    height: 15px;
+                    vertical-align: middle;
+                }
+                .batterie{
+                    width: 24px;
+                    height: 25px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .navbar_left_portable{
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            margin-left: 15px;
+            li{
+                .operateur{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
